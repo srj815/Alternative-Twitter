@@ -1,0 +1,298 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+:root{
+    --color-principal: #090E25;
+    --color-box: #111C34;
+    --color-input: #1A2A44;
+    --color-claro: #FEFEFF;
+    --color-blue: #1091F3;
+    --color-grey: #888888;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+body{
+    background-color: var(--color-principal);
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ------------------------------------------HEADER------------------------------------------ */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+/*     width: 100%; */
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-principal);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.headerLeft{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.logotwr{
+    height: 2rem;
+    cursor: pointer;
+}
+
+.inputExplore{
+    height: 2.2rem;
+    width: 11rem;
+    border-radius: 10px;
+    background-color: var(--color-box);
+    color: var(--color-grey);
+    border: none;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.buttonNav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.4rem;
+    height: 2.2rem;
+    width: 5.8rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.container{
+    position: relative;
+}
+
+.son{
+    position: absolute;
+    left: 44.44%;
+    right: 3.7%;
+    bottom: 53.33%;
+}
+
+.home{
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.notif{
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--color-blue);
+    border-radius: 50%;
+    border: 2.5px solid var(--color-principal);
+    position: relative;
+    cursor: pointer;
+}
+
+.numNotif{
+    position: absolute;
+    display: flex;
+    left: 25%;
+    top: 10%;
+    font-size: 0.5rem;
+    color: var(--color-claro);
+}
+
+.line4{
+    height: 3rem;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 3px;
+    align-items: center;
+    height: 2.7rem;
+    width: 13rem;
+    cursor: pointer;
+    background-color: var(--color-box);
+    color: var(--color-claro);
+    border: none;
+    border-radius: 25px;
+}
+
+.fotoPerfil{
+    height: 2.4rem;
+}
+
+
+
+/* ------------------------------------------MAIN------------------------------------------ */
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.asideIzq{
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    gap: 1.5rem;
+}
+
+/* -------------------PROFILE------------------- */
+
+.profileCard{
+    border-radius: 10px;
+    background-color: var(--color-box);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: var(--color-claro);
+    gap: 0.3rem;
+}
+
+.imgProfile{
+    position: absolute;
+    height: 5.5rem;
+    top: 10%;
+    transform: translateY(-90%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.arroba{
+    color: var(--color-grey);
+    font-size: small;
+    font-weight: 100;
+}
+
+.descripcion{
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+.line{
+    width: 100%;
+}
+
+.ff{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.fff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ffff{
+    font-size: smaller;
+    color: var(--color-grey);
+}
+
+.profileCard a{
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+
+/* -------------------PROFILE------------------- */
+
+
+.peopleMayYouKnow{
+    border-radius: 10px;
+    background-color: var(--color-box);
+    width: 100%;
+    color: var(--color-claro);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mayKnow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mayKnow img{
+    height: 3rem;
+}
+
+.mayKnow .hola{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mayKnow .hola h3{
+    font-size: medium;
+    text-align: left;
+}
+
+.mayKnow .hola span{
+    color: var(--color-grey);
+    font-size: smaller;
+    text-align: end;
+}
+
+
+.mayKnow button{
+    border-radius: 20px;
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    font-weight: 600;
+}
+
+.peopleMayYouKnow a{
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+/* .principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.asideDer{
+    border-radius: 10px;
+    background-color: var(--color-box);
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+} */
