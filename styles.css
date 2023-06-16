@@ -112,19 +112,19 @@ header nav{
     transform-origin: top center;
     animation: balanceo 1s ease-in-out;
 }
-  
+
 @keyframes balanceo {
     0% {
-    transform: rotate(0deg); /* La imagen está en posición inicial */
+    transform: rotate(0deg); 
     }
     25% {
-    transform: rotate(15deg); /* La imagen se inclina hacia un lado */
+    transform: rotate(15deg); 
     }
     50% {
-    transform: rotate(-15deg); /* La imagen se inclina hacia el otro lado */
+    transform: rotate(-15deg); 
     }
     100% {
-    transform: rotate(0deg); /* La imagen se inclina hacia un lado */
+    transform: rotate(0deg); 
     }
 
     
@@ -222,10 +222,11 @@ main{
 .imgProfile{
     position: absolute;
     height: 5.5rem;
-    top: 10%;
+    top: 7%;
     transform: translateY(-90%);
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .banner{
@@ -342,6 +343,7 @@ h1{
     width: 5rem;
     border: none;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .peopleMayYouKnow a{
@@ -411,6 +413,11 @@ h1{
 .inputSon .head{
     position: relative;
 }
+
+/* .head:hover{
+    transition: 0.5s;
+    color: var(--color-claro);
+} */
 
 .face{
     position:absolute;
